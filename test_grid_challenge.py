@@ -7,3 +7,9 @@ class TestGridChallenge(unittest.TestCase):
         excepted_result = 'YES'
         result = grid_challenge(grid)
         self.assertEqual(result, excepted_result)
+
+    def test_give_mpxz_abcd_wlmf_should_yes(self):
+        grid = ['mpxz', 'abcd', 'wlmf']
+        excepted_result = 'NO'
+        result = grid_challenge(grid)
+        self.assertEqual(result, excepted_result)
