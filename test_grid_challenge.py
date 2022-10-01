@@ -13,3 +13,9 @@ class TestGridChallenge(unittest.TestCase):
         excepted_result = 'NO'
         result = grid_challenge(grid)
         self.assertEqual(result, excepted_result)
+
+    def test_give_ebacd_fghij_olmkn_trpqs_xywuv_should_yes(self):
+        grid = ['ebacd', 'fghij', 'olmkn', 'trpqs', 'xywuv']
+        excepted_result = 'YES'
+        result = grid_challenge(grid)
+        self.assertEqual(result, excepted_result)
