@@ -7,3 +7,9 @@ class TestAlternatingCharacters(unittest.TestCase):
         excepted_result = 3
         result = alternating_characters(text)
         self.assertEqual(excepted_result, result)
+
+    def test_give_BBBBB_should_4(self):
+        text = 'BBBBB'
+        excepted_result = 4
+        result = alternating_characters(text)
+        self.assertEqual(excepted_result, result)
