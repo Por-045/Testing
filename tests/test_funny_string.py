@@ -8,8 +8,20 @@ class TestFunnyString(unittest.TestCase):
         result = funny_string(text)
         self.assertEqual(result, excepted_result)
 
-    def test_give_ehkl_should_funny(self):
+    def test_give_ehkl_should_not_funny(self):
         text = 'ehkl'
+        excepted_result = 'Not Funny'
+        result = funny_string(text)
+        self.assertEqual(result, excepted_result)
+
+    def test_give_zxcd_should_funny(self):
+        text = 'zxcd'
+        excepted_result = 'Funny'
+        result = funny_string(text)
+        self.assertEqual(result, excepted_result)
+
+    def test_give_abcj_should_not_funny(self):
+        text = 'abcj'
         excepted_result = 'Not Funny'
         result = funny_string(text)
         self.assertEqual(result, excepted_result)
