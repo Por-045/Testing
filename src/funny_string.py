@@ -7,5 +7,5 @@ def funny_string(text):
     reversed_ascii_text_differnce = [abs(reversed_ascii_text[i] - reversed_ascii_text[i+1]) for i in range(len(reversed_ascii_text)-1)]
 
     if ascii_text_differnce == reversed_ascii_text_differnce:
-        return "Funny"
-    return "Not Funny"
+        return 'Funny'
+    return 'Not Funny'
