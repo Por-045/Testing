@@ -14,8 +14,8 @@ class TestFunnyString(unittest.TestCase):
         result = funny_string(text)
         self.assertEqual(result, excepted_result)
 
-    def test_give_zxcd_should_funny(self):
-        text = 'zxcd'
+    def test_give_zycd_should_funny(self):
+        text = 'zycd'
         excepted_result = 'Funny'
         result = funny_string(text)
         self.assertEqual(result, excepted_result)
