@@ -13,3 +13,9 @@ class TestTwoCharacters(unittest.TestCase):
         excepted_result = 8
         result = two_characters(text)
         self.assertEqual(result, excepted_result)
+
+    def test_give_asvkugfiugsalddlasguifgukvsa_should_0(self):
+        text = 'asvkugfiugsalddlasguifgukvsa'
+        excepted_result = 0
+        result = two_characters(text)
+        self.assertEqual(result, excepted_result)
